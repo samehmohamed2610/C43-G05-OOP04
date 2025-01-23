@@ -23,13 +23,35 @@ namespace OOP04
         #endregion
 
         #region Methods
-        public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+        public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
         {
-            return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
+            return new ComplexNumber( (c1?.Real ?? 0) + (c2?.Real ?? 0) , (c1?.Imaginary ?? 0) + (c2?.Imaginary ?? 0) );
         }
-        public static ComplexNumber operator -(ComplexNumber c1, ComplexNumber c2)
+        public static ComplexNumber operator - (ComplexNumber c1, ComplexNumber c2)
         {
-            return new ComplexNumber(c1.Real - c2.Real, c1.Imaginary - c2.Imaginary);
+            return new ComplexNumber( (c1?.Real ?? 0) - (c2?.Real ?? 0), (c1?.Imaginary ?? 0) - (c2?.Imaginary ?? 0) );
+        }
+        public static ComplexNumber operator ++ (ComplexNumber c)
+        {
+            return new ComplexNumber ((c?.Real ?? 0) + 1 , c?.Imaginary ?? 0);
+        }
+        public static ComplexNumber operator -- (ComplexNumber c)
+        {
+            return new ComplexNumber((c?.Real ?? 0) -1 , c?.Imaginary ?? 0);
+        }
+        public static bool operator > (ComplexNumber c1, ComplexNumber c2)
+        {
+            if (c1?.Real == c2?.Real)
+                return c1?.Imaginary > c2?.Imaginary;
+            else
+                return c1?.Real > c2?.Real; 
+        }
+        public static bool operator < (ComplexNumber c1, ComplexNumber c2)
+        {
+            if (c1?.Real == c2?.Real)
+                return c1?.Imaginary < c2?.Imaginary;
+            else
+                return c1?.Real < c2?.Real;
         }
         public override string ToString()
         {
