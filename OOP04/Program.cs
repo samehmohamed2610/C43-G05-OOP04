@@ -28,14 +28,14 @@
 
             #region Q3
 
-            //ComplexNumber c1 = new ComplexNumber(3, 4);
-            //ComplexNumber c2 = new ComplexNumber(1, 2);
+            ComplexNumber c1 = new ComplexNumber(2, 4);
+            ComplexNumber c2 = new ComplexNumber(3, 5);
 
-            //ComplexNumber sum = c1 + c2;
-            //Console.WriteLine($"Sum: {sum}"); 
+            ComplexNumber sum = c1 + c2;
+            Console.WriteLine($"Sum: {sum}");
 
-            //ComplexNumber difference = c1 - c2;
-            //Console.WriteLine($"Difference: {difference}"); 
+            ComplexNumber difference = c1 - c2;
+            Console.WriteLine($"Difference: {difference}");
 
             #endregion
 
@@ -101,22 +101,22 @@
             //Duration D3;
 
             //D3 = D1 + D2;
-            //Console.WriteLine(D3); 
+            //Console.WriteLine(D3);
 
             //D3 = D1 + 7800;
-            //Console.WriteLine(D3); 
+            //Console.WriteLine(D3);
 
             //D3 = 666 + D3;
-            //Console.WriteLine(D3); 
+            //Console.WriteLine(D3);
 
-            //D3 = ++D1; 
-            //Console.WriteLine(D3); 
+            //D3 = ++D1;
+            //Console.WriteLine(D3);
 
-            //D3 = --D2; 
-            //Console.WriteLine(D3); 
+            //D3 = --D2;
+            //Console.WriteLine(D3);
 
             //D1 = D1 - D2;
-            //Console.WriteLine(D1); 
+            //Console.WriteLine(D1);
 
             //if (D1 > D2)
             //    Console.WriteLine("D1 is greater than D2");
@@ -126,9 +126,9 @@
             //if (D1 < D2)
             //    Console.WriteLine("D1 is less than or equal to D2");
 
-            
+
             //DateTime obj = (DateTime)D1;
-            //Console.WriteLine(obj); 
+            //Console.WriteLine(obj);
             #endregion
 
             #endregion

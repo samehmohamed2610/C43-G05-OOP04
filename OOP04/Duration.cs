@@ -106,12 +106,12 @@ namespace OOP04
             return new Duration(Math.Max(0, totalSeconds1 - totalSeconds2));
         }
 
-        public static bool operator > (Duration d1 , Duration d2)
+        public static bool operator > (Duration d1, Duration d2)
         {
             return (d1.Hours * 3600 + d1.Minutes * 60 + d1.Seconds) > (d2.Hours * 3600 + d2.Minutes * 60 + d2.Seconds);
         }
 
-        public static bool operator < (Duration d1 , Duration d2)
+        public static bool operator < (Duration d1, Duration d2)
         {
             return (d1.Hours * 3600 + d1.Minutes * 60 + d1.Seconds) <= (d2.Hours * 3600 + d2.Minutes * 60 + d2.Seconds);
         }
