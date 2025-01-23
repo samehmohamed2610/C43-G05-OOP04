@@ -1,4 +1,6 @@
-﻿namespace OOP04
+﻿using System.ComponentModel.Design;
+
+namespace OOP04
 {
     internal class Program
     {
@@ -30,12 +32,29 @@
 
             ComplexNumber c1 = new ComplexNumber(2, 4);
             ComplexNumber c2 = new ComplexNumber(3, 5);
+           
 
             ComplexNumber sum = c1 + c2;
             Console.WriteLine($"Sum: {sum}");
 
             ComplexNumber difference = c1 - c2;
             Console.WriteLine($"Difference: {difference}");
+
+            //c1++;
+            //Console.WriteLine($" C1++ : {c1}");
+
+            //c2--;
+            //Console.WriteLine($" C1-- : {c2}");
+
+            if(c1>c2)
+                Console.WriteLine("c1 is Greater than is C2 ");
+            else if (c1 < c2)
+                Console.WriteLine("c1 is Less than is C2");
+            else
+                Console.WriteLine("c1 is Equal C2");
+                        
+
+
 
             #endregion
 
